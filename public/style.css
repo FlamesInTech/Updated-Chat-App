@@ -1,0 +1,124 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: "Roboto", sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.app{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+	background-color: #fff;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+/*THIS IS FOR THE APP SIDE*/
+.app > .screen{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.screen .form-input label{
+	display: block;
+	margin-bottom: 5px;
+}
+.screen .form-input input{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #57305C;
+	font-size: 16px;
+}
+.screen .form-input button {
+	padding: 10px 20px;
+	background-color: #9B20A8;
+	border-radius: 3px;
+	color: #eee;
+	font-size: 16px;
+	cursor: pointer;
+	outline: none;
+	border: none; 
+}
+.chat-screen .header{
+	background-color: #CA2ADB;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 20px;
+}
+.chat-screen .header .logo{
+	font-size: 18px;
+	color: #eee;
+	font-weight: 600;
+}
+.chat-screen .header button{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	background: transparent;
+	color: #eee;
+	font-size: 15px;
+	cursor: pointer;
+	outline: none;
+}
+
+
+/*THIS IS FOR MESSAGES*/
+.chat-screen .messages {
+	width: 100%;
+	height: calc(100% - 100px);
+	background-color: #f5f5f5;
+	overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4c4c6a;
+  border-radius: 2px;
+}
+ .message {
+	padding: 10px;
+}
+.my-message {
+	display: flex;
+	justify-content: flex-end;
+	float: right;
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05);
+	padding: 10px;
+	margin-top: 45px;
+}
+.other-message {
+	justify-content: flex-start;
+	float: left;
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05);
+	padding: 10px;
+}
+.text{
+	word-wrap: break-word;
+}
+.chat-screen .typebox {
+	width: 100%;
+	height: 50px;
+	display: flex;
+}
+.chat-screen .typebox input {
+	flex: 1;
+	height: 50px;
+	font-size: 18px;
+}
+ .typebox button {
+	width: 88px;
+	height: 100%;
+	background-color: #57305C;
+	color: #eee;
+	font-size: 16px;
+	border: none;
+}
